@@ -33,9 +33,9 @@ jobs:
         uses: fjogeleit/yaml-update-action@main
         with:
           valueFile: 'application.yaml'
-          propertyPath: 'spec.template.spec.images'
+          propertyPath: 'metadata.name'
           value: v1.0.1
-          commitChange: false
+          commitChange: true
           updateFile: true
           
       # Runs a set of commands using the runners shell
