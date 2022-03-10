@@ -33,7 +33,7 @@ jobs:
         uses: fjogeleit/yaml-update-action@main
         with:
           valueFile: 'application.yaml'
-          propertyPath: 'spec.template.spec.image'
+          propertyPath: 'spec.template.spec.images'
           value: v1.0.1
           commitChange: false
           updateFile: true
