@@ -33,7 +33,7 @@ jobs:
         uses: fjogeleit/yaml-update-action@main
         with:
           valueFile: 'application.yaml'
-          propertyPath: 'metadata.name'
+          propertyPath: '.metadata.name'
           value: v1.0.1
           commitChange: true
           updateFile: true
