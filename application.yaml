@@ -1,4 +1,3 @@
----
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
@@ -49,27 +48,3 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "140m"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: demo
-spec:
-  ports:
-  - port: 80
-    targetPort: 8080
-  selector:
-    app: demo
-  type: ClusterIP
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: demo-canary
-spec:
-  ports:
-  - port: 80
-    targetPort: 8080
-  selector:
-    app: demo
-  type: ClusterIP
