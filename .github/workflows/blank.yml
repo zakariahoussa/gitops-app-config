@@ -29,7 +29,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
           
-      - uses: Stockopedia/octommit@v1
+      - uses: Stockopedia/octommit@v1.0.19
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
