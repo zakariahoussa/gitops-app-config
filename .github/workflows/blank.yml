@@ -37,8 +37,8 @@ jobs:
           value: v1.0.2
           commitChange: true
           updateFile: true
-          branch: toto
-          targetBranch: main
+          branch: main
+          targetBranch: toto
           createPR: true
           
       # Runs a set of commands using the runners shell
