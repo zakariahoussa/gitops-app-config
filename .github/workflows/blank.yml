@@ -28,17 +28,15 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-
-      - name: Update values.yaml
-        uses: fjogeleit/yaml-update-action@main
+          
+      - name: GitOps Update
+        uses: simplycubed/gitops-update@0.15
         with:
-          valueFile: 'application.yaml'
-          propertyPath: '.metadata.name'
-          branch: test
-          value: v1.0.1
-          commitChange: true
-          updateFile: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: "application.yaml"
+          key: "image"
+          value: 'zak'
+          github-deploy-key: ${{ secrets.GITHUB_TOKEN }}
+          github-org-and-repo:  "zakariahoussa/gitops-app-config"
           
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
