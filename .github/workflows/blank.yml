@@ -38,8 +38,8 @@ jobs:
               .repository("gitops-app-config")
               .sourceBranch("main")
               .outputBranch("main")
-              .sourcePath("application.yaml")
-              .outputPath("application.yaml")
+              .sourcePath("./application.yaml")
+              .outputPath("./application.yaml")
               .set("kind", new Date().toString())
               .commit("[skip ci] test commit")
               .run();
