@@ -39,7 +39,7 @@ jobs:
         uses: fjogeleit/yaml-update-action@main
         with:
           valueFile: 'application.yaml'
-          propertyPath: 'metadata.name'
+          propertyPath: 'spec.strategy.canary.setWeight'
           value: v1.0.24
           commitChange: true
           updateFile: true
