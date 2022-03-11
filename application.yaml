@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
         - name: demo
-          image: ghcr.io/zakariahoussa/gitops-app-src:sha-b8d8835
+          image: ghcr.io/zakariahoussa/gitops-app-src:sha-9308d44
           imagePullPolicy: Always
           ports:
             - name: web
