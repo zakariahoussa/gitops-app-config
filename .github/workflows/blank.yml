@@ -39,7 +39,7 @@ jobs:
         uses: fjogeleit/yaml-update-action@main
         with:
           valueFile: 'application.yaml'
-          propertyPath: 'spec.strategy.canary.setWeight'
+          propertyPath: 'spec.template.spec.containers.name.image'
           value: v1.0.24
           commitChange: true
           updateFile: true
