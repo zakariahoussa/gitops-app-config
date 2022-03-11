@@ -39,7 +39,7 @@ jobs:
         uses: fjogeleit/yaml-update-action@main
         with:
           valueFile: 'application.yaml'
-          propertyPath: 'spec.template.spec.containers.image'
+          propertyPath: 'metadata.name'
           value: v1.0.24
           commitChange: true
           updateFile: true
