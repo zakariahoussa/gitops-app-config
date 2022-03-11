@@ -34,10 +34,10 @@ jobs:
         with:
           valueFile: 'file.yaml'
           propertyPath: 'file.version'
-          value: v1.0.1
+          value: v1.0.2
           commitChange: true
           updateFile: true
-          branch: main
+          branch: toto
           targetBranch: toto
           createPR: true
           
