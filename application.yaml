@@ -22,7 +22,7 @@ spec:
             name: istio-vs
             routes:
               - primary
-  replicas: 3
+  replicas: 1
   revisionHistoryLimit: 2
   selector:
     matchLabels:
@@ -43,8 +43,8 @@ spec:
               containerPort: 8080
           resources:
             requests:
-              memory: 3Gi
+              memory: 350Mi
               cpu: 100m
             limits:
-              memory: 4Gi
+              memory: 400Mi
               cpu: 140m
