@@ -1,0 +1,8 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  labels:
+    app: my-hello
+  name: demo
+spec:
+  replicas: 2
